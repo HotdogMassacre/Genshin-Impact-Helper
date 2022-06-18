@@ -1,0 +1,21 @@
+    p := Morse()
+    If (p = "0") {
+        Send {%keySent%}
+    } Else If (p = "00") {
+        Send {%keySent%}
+        Sleep, 150
+        Send {e}
+    } Else If (p = "01") {
+        Send {%keySent%}
+        Sleep, 800
+        Send {q}
+        Sleep, 1500
+        Send {e}
+    } Else If (p = "1") {
+        Send {%keySent%}
+        Sleep, 150
+        Send {q}
+    } Else {
+        Send {%keySent%}
+    }
+}
